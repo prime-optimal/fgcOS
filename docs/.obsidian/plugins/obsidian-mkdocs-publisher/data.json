@@ -4,7 +4,7 @@
     "repo": "fgcOS",
     "branch": "main",
     "token": "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",
-    "automaticallyMergePR": false,
+    "automaticallyMergePR": true,
     "api": {
       "tiersForApi": "Github Free/Pro/Team (default)",
       "hostname": ""
