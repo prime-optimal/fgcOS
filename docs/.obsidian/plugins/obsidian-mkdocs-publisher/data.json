@@ -1,9 +1,9 @@
 {
   "github": {
     "user": "prime-optimal",
-    "repo": "fgcos-docs",
+    "repo": "fgcOS",
     "branch": "main",
-    "token": "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",
+    "token": "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",
     "automaticallyMergePR": false,
     "api": {
       "tiersForApi": "Github Free/Pro/Team (default)",
@@ -40,15 +40,15 @@
     "dataview": true,
     "censorText": [],
     "tags": {
-      "inline": false,
+      "inline": true,
       "exclude": [],
       "fields": []
     },
     "links": {
-      "internal": false,
+      "internal": true,
       "unshared": false,
       "wiki": false,
-      "slugify": false
+      "slugify": true
     }
   },
   "embed": {

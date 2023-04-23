@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "blog/2023-04-23-10-18-am Site Launch.md",
+                "file": "install/Installation.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "blog/2023-04-23-10-18-am Site Launch.md",
+                "file": "install/Installation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "blog/2023-04-23-10-18-am Site Launch.md",
+                "file": "install/Installation.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "blog/2023-04-23-10-18-am Site Launch.md"
+                "file": "install/Installation.md"
               }
             }
           },
@@ -158,6 +158,9 @@
   },
   "active": "e2517300787a0dd2",
   "lastOpenFiles": [
+    "index.md",
+    "install/Optimization.md",
+    "install/Installation.md",
     "blog/2023-04-23-10-18-am Site Launch.md",
     "blog/2023-04-23-9-15-am.md",
     "blog/2023-04-23-9-14-am.md",
@@ -165,12 +168,9 @@
     "timestamps/2023-04-23-9-12-am.md",
     "timestamps/2023-04-23-5-43-am.md",
     "timestamps/2023-04-23-5-44-am.md",
-    "install/Installation.md",
     "timestamps/test",
     "assets/meta/favicons.png",
     "templates/Zettelkasten.md",
-    "install/Optimization.md",
-    "index.md",
     "hidden/tags.md",
     "Untitled.md",
     "templates/Untitled 1.md",

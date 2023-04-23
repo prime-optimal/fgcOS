@@ -13,6 +13,6 @@ The optimized system for fighting games.
 -   Game-specific optimizations.
 
 ## Documentation
-[[2023-04-23] ]created documentation while watching a live optimization from Arturo.
+[[2023-04-23]] created documentation while watching a live optimization from Arturo.
 -  [[Installation]] 
 - [[Optimization]]

@@ -1,14 +1,19 @@
-test---
-created:  
-tags: share
-share: true
 ---
+created: 2023-04-23
+updated: 2023-04-23 10:30
+share: true
+tags: Installation
+---
+
 ### Step 1: Windows 10 Prep  
 - Download Windows 10 stock ISO 
 	- itechtips 
 	- microsoft.com
 - use Rufus to write the ISO to a flash drive 
 	- Plug into USB 3.0 
+
+> [!question]  Is this a success?
+> Only time will tell.
 
 ```ad-tip
 Copy the Atlas registry file to the USB drive.  Otherwise there will be additional services installed in the background the first time it connects to the internet
