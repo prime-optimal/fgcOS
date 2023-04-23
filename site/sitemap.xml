@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://github.com/prime-optimal/fgcos-docs.git/blog/2023-04-23-10-18-am%20Site%20Launch/</loc>
+         <lastmod>2023-04-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://github.com/prime-optimal/fgcos-docs.git/hidden/Low-End%20Machines/</loc>
          <lastmod>2023-04-23</lastmod>
          <changefreq>daily</changefreq>
@@ -22,16 +27,6 @@
     </url>
     <url>
          <loc>https://github.com/prime-optimal/fgcos-docs.git/install/Optimization/</loc>
-         <lastmod>2023-04-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/prime-optimal/fgcos-docs.git/timestamps/2023-04-23-9-14-am/</loc>
-         <lastmod>2023-04-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://github.com/prime-optimal/fgcos-docs.git/timestamps/2023-04-23-9-15-am/</loc>
          <lastmod>2023-04-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
