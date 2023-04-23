@@ -1,0 +1,786 @@
+
+<!DOCTYPE html>
+
+<html class="no-js" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="fgcOS An optimized system for playing fighting games." name="description"/>
+<link href="https://github.com/prime-optimal/fgcos-docs.git/install/Optimization/" rel="canonical"/>
+<link href="../Installation/" rel="prev"/>
+<link href="../../timestamps/2023-04-23-9-14-am/" rel="next"/>
+<link href="../../assets/meta/favicons.png" rel="icon"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
+<title>Optimization - fgcOS</title>
+<link href="../../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,700,700i%7CUbuntu+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
+<style>:root{--md-text-font:"Ubuntu";--md-code-font:"Ubuntu Mono"}</style>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets/dist/styles.css" rel="stylesheet"/>
+<link href="../../assets/css/admonition.css" rel="stylesheet"/>
+<link href="../../assets/css/custom_attributes.css" rel="stylesheet"/>
+<link href="../../assets/css/customization.css" rel="stylesheet"/>
+<link href="../../assets/css/fgcos.css" rel="stylesheet"/>
+<script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+<link href="https://unpkg.com/tippy.js@6/animations/scale-subtle.css" rel="stylesheet"/>
+<link href="https://unpkg.com/tippy.js@6/themes/translucent.css" rel="stylesheet"/>
+<link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
+<meta content="https://github.com/prime-optimal/fgcos-docs.git/" name="site_url"/>
+<meta content="Optimization" property="og:title"/>
+<meta content="Optimization" name="twitter:title"/>
+<meta content="fgcOS An optimized system for playing fighting games." name="og:description"/>
+<meta content="fgcOS An optimized system for playing fighting games." name="twitter:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://github.com/prime-optimal/fgcos-docs.git/assets/meta/SEO.png" property="og:image"/>
+<meta content="https://github.com/prime-optimal/fgcos-docs.git/assets/meta/SEO.png" name="twitter:image"/>
+<link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+            html.glightbox-open { overflow: initial; height: 100%; }
+            .gslide-title { margin-top: 0px; user-select: text; }
+            .gslide-desc { color: #666; user-select: text; }
+            .gslide-image img { background: white; }
+            
+                .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+                </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
+<body data-md-color-accent="indigo" data-md-color-primary="blue-grey" data-md-color-scheme="slate" dir="ltr">
+<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
+<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
+<label class="md-overlay" for="__drawer"></label>
+<div data-md-component="skip">
+<a class="md-skip" href="#step-3-optimizations">
+          Skip to content
+        </a>
+</div>
+<div data-md-component="announce">
+</div>
+<header class="md-header md-header--lifted" data-md-component="header">
+<nav aria-label="Header" class="md-header__inner md-grid">
+<a aria-label="fgcOS" class="md-header__button md-logo" data-md-component="logo" href="../.." title="fgcOS">
+<img alt="logo" src="../../assets/meta/favicons.png"/>
+</a>
+<label class="md-header__button md-icon" for="__drawer">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
+</label>
+<div class="md-header__title" data-md-component="header-title">
+<div class="md-header__ellipsis">
+<div class="md-header__topic">
+<span class="md-ellipsis">
+            fgcOS
+          </span>
+</div>
+<div class="md-header__topic" data-md-component="header-topic">
+<span class="md-ellipsis">
+            
+              Optimization
+            
+          </span>
+</div>
+</div>
+</div>
+<form class="md-header__option" data-md-component="palette">
+<input aria-hidden="true" class="md-option" data-md-color-accent="indigo" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="blue-grey" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+</form>
+<label class="md-header__button md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+</label>
+<div class="md-search" data-md-component="search" role="dialog">
+<label class="md-search__overlay" for="__search"></label>
+<div class="md-search__inner" role="search">
+<form class="md-search__form" name="search">
+<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
+<label class="md-search__icon md-icon" for="__search">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
+</label>
+<nav aria-label="Search" class="md-search__options">
+<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
+</button>
+</nav>
+<div class="md-search__suggest" data-md-component="search-suggest"></div>
+</form>
+<div class="md-search__output">
+<div class="md-search__scrollwrap" data-md-scrollfix="">
+<div class="md-search-result" data-md-component="search-result">
+<div class="md-search-result__meta">
+            Initializing search
+          </div>
+<ol class="md-search-result__list" role="presentation"></ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+</nav>
+<nav aria-label="Tabs" class="md-tabs" data-md-component="tabs">
+<div class="md-tabs__inner md-grid">
+<ul class="md-tabs__list">
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../..">
+      Home
+    </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link md-tabs__link--active" href="../Installation/">
+        Install
+      </a>
+</li>
+<li class="md-tabs__item">
+<a class="md-tabs__link" href="../../timestamps/2023-04-23-9-14-am/">
+        Timestamps
+      </a>
+</li>
+</ul>
+</div>
+</nav>
+</header>
+<div class="md-container" data-md-component="container">
+<main class="md-main" data-md-component="main">
+<div class="md-main__inner md-grid">
+<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Navigation" class="md-nav md-nav--primary md-nav--lifted" data-md-level="0">
+<label class="md-nav__title" for="__drawer">
+<a aria-label="fgcOS" class="md-nav__button md-logo" data-md-component="logo" href="../.." title="fgcOS">
+<img alt="logo" src="../../assets/meta/favicons.png"/>
+</a>
+    fgcOS
+  </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../..">
+        Home
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2" tabindex="0">
+          Install
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Install" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_2">
+<span class="md-nav__icon md-icon"></span>
+          Install
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../Installation/">
+        Installation
+      </a>
+</li>
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          Optimization
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        Optimization
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-optimizations">
+    Step 3: Optimizations
+  </a>
+<nav aria-label="Step 3: Optimizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#atlas-shortcuts">
+    Atlas Shortcuts
+  </a>
+<nav aria-label="Atlas Shortcuts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#do-not-disable">
+    Do Not Disable
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional">
+    Optional
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#calyptos-latency-guide-calyptous">
+    Calypto's Latency Guide (calypto.us)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#melody-low-latency-script">
+    Melody Low Latency Script
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fgcos-tweaks">
+    fgcOS Tweaks
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-game-specific-optimizations">
+    Step 4: Game-Specific Optimizations
+  </a>
+<nav aria-label="Step 4: Game-Specific Optimizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fightcade">
+    Fightcade
+  </a>
+<nav aria-label="Fightcade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-strike">
+    3rd Strike
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+    Troubleshooting
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tekken-7">
+    Tekken 7
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#street-fighter-v">
+    Street Fighter V
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dragonball-fighterz">
+    DragonBall FighterZ
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#king-of-fighters-xv">
+    King of Fighters XV
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-customization-troubleshooting-and-edge-cases">
+    Step 5: Customization, Troubleshooting, and Edge Cases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#microsoft-services-to-potentially-disable">
+    Microsoft Services to Potentially Disable
+  </a>
+<nav aria-label="Microsoft Services to Potentially Disable" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gameutil">
+    GameUtil
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-k">
+    Special K
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-this-has-to-be-optimized-for-each-game-individually">
+    - This has to be optimized for each game individually.
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_3" id="__nav_3" type="checkbox"/>
+<label aria-expanded="false" class="md-nav__link" for="__nav_3" tabindex="0">
+          Timestamps
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Timestamps" class="md-nav" data-md-level="1">
+<label class="md-nav__title" for="__nav_3">
+<span class="md-nav__icon md-icon"></span>
+          Timestamps
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../timestamps/2023-04-23-9-14-am/">
+        2023 04 23 9 14 am
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../timestamps/2023-04-23-9-15-am/">
+        foo
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
+<div class="md-sidebar__scrollwrap">
+<div class="md-sidebar__inner">
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-3-optimizations">
+    Step 3: Optimizations
+  </a>
+<nav aria-label="Step 3: Optimizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#atlas-shortcuts">
+    Atlas Shortcuts
+  </a>
+<nav aria-label="Atlas Shortcuts" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#do-not-disable">
+    Do Not Disable
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#optional">
+    Optional
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#calyptos-latency-guide-calyptous">
+    Calypto's Latency Guide (calypto.us)
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#melody-low-latency-script">
+    Melody Low Latency Script
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fgcos-tweaks">
+    fgcOS Tweaks
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-4-game-specific-optimizations">
+    Step 4: Game-Specific Optimizations
+  </a>
+<nav aria-label="Step 4: Game-Specific Optimizations" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#fightcade">
+    Fightcade
+  </a>
+<nav aria-label="Fightcade" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#3rd-strike">
+    3rd Strike
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#troubleshooting">
+    Troubleshooting
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#tekken-7">
+    Tekken 7
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#street-fighter-v">
+    Street Fighter V
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#dragonball-fighterz">
+    DragonBall FighterZ
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#king-of-fighters-xv">
+    King of Fighters XV
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#step-5-customization-troubleshooting-and-edge-cases">
+    Step 5: Customization, Troubleshooting, and Edge Cases
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#microsoft-services-to-potentially-disable">
+    Microsoft Services to Potentially Disable
+  </a>
+<nav aria-label="Microsoft Services to Potentially Disable" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#gameutil">
+    GameUtil
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#special-k">
+    Special K
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#-this-has-to-be-optimized-for-each-game-individually">
+    - This has to be optimized for each game individually.
+  </a>
+</li>
+</ul>
+</nav>
+</div>
+</div>
+</div>
+<div class="md-content" data-md-component="content">
+<article class="md-content__inner md-typeset">
+<!--
+  Copyright (c) 2016-2023 Martin Donath <martin.donath@squidfunk.com>
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to
+  deal in the Software without restriction, including without limitation the
+  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+  sell copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in
+  all copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+  IN THE SOFTWARE.
+-->
+<!-- Tags -->
+<!-- Actions -->
+<!--
+  Hack: check whether the content contains a h1 headline. If it doesn't, the
+  page title (or respectively site name) is used as the main headline.
+-->
+<h1>Optimization</h1>
+<!-- Page content -->
+<h4 id="step-3-optimizations">Step 3: Optimizations<a class="headerlink" href="#step-3-optimizations" title="Permanent link">¶</a></h4>
+<h5 id="atlas-shortcuts">Atlas Shortcuts<a class="headerlink" href="#atlas-shortcuts" title="Permanent link">¶</a></h5>
+<ul>
+<li>Winrar </li>
+<li>Brave</li>
+<li>Atlas Folder -&gt; Advanced Configuration -&gt; NVIDIA Display Container -&gt; Disable Container <br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/2023-04-22-17-32-15%201.png"><img alt="2023-04-22-17-32-15 1.png" src="../../assets/img/2023-04-22-17-32-15%201.png" title="2023-04-22-17-32-15 1.png"/></a><ul>
+<li>Check Display Settings to verify refresh rate </li>
+<li>Configuration -&gt; General Config -&gt; Disable <strong>Most</strong><ul>
+<li>General Config -&gt; Mitigations -&gt; Disable All Mitigations disables spectre and meltdown which introduce latency.  <em>Secure Boot must be off</em> </li>
+<li>Start Menu <ul>
+<li>Install OpenShell </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Disable VPN  </li>
+</ul>
+</li>
+<li></li>
+<li>Install Drivers <ul>
+<li>Realtek Audio Drivers </li>
+<li>Ethernet LAN Drivers </li>
+<li>GPU Drivers <ul>
+<li>Discreet GPU drivers install (NVIDIA or AMD)<ul>
+<li>NVCleanInstall  <em>automatically selects the driver version and you can turn off telemetry</em><ul>
+<li>Disable Telemetry </li>
+<li>Perform clean installation </li>
+<li>Expert Tweaks <ul>
+<li>Disable Telemetry </li>
+<li>Enable Mesage Signal  interrupts </li>
+<li>Disable HDCP </li>
+<li>Apply NVENC Video Encoding </li>
+</ul>
+</li>
+</ul>
+</li>
+<li>NVIDIA Control Panel <ul>
+<li>Manage 3D Settings <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/Pasted%20image%2020230422172249.png"><img alt="Pasted image 20230422172249.png" src="../../assets/img/Pasted%20image%2020230422172249.png" title="Pasted image 20230422172249.png"/></a><ul>
+<li>High performance NVIDIA Processor </li>
+</ul>
+</li>
+<li>Low Latency Mode - <strong>Ultra</strong> </li>
+<li>Power Mode - <strong>Maximum performance</strong> </li>
+<li>Vertical Sync - <strong>Off</strong></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Integrated GPU drivers (Intel)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Custom Resolution Utility (CRU)</li>
+<li>Display Settings<ul>
+<li>Verify refresh rate of the monitor </li>
+</ul>
+</li>
+</ul>
+<h6 id="do-not-disable">Do Not Disable<a class="headerlink" href="#do-not-disable" title="Permanent link">¶</a></h6>
+<ul>
+<li>Xbox </li>
+<li>UWP </li>
+<li>UAC </li>
+<li>Wi-Fi</li>
+<li>Windows Firewall</li>
+<li>Microsoft Store </li>
+<li>FSO and Game Bar </li>
+</ul>
+<h6 id="optional">Optional<a class="headerlink" href="#optional" title="Permanent link">¶</a></h6>
+<p>Some games come with these already, but it’s likely these will need to be installed.</p>
+<ul>
+<li>Visual C++ Redistributable</li>
+<li>Visual .NET Redistributable </li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-0-1" id="__codelineno-0-1" name="__codelineno-0-1"></a>At this point there should probably be around ~60 processes 
+</code></pre></div>
+<ul>
+<li>GameUtil - <em>kills desktop window manager which removes 1 frame of lag, locks</em> <ul>
+<li>Move to desktop</li>
+<li>go to gameutil first then load game</li>
+<li>Disable Idle</li>
+</ul>
+</li>
+<li>LatencyMon</li>
+<li>Install Steam<ul>
+<li>Login and start downloading game </li>
+<li>Configure controller </li>
+<li>Install games </li>
+<li>Right click the steam shortcut -&gt; Properties and enter this command:</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-1-1" id="__codelineno-1-1" name="__codelineno-1-1"></a>"C:\Program Files (x86)\Steam\Steam.exe" -no-browser +open steam://open/minigameslist
+</code></pre></div>
+<ul>
+<li>Intelligent Standby List Cleaner </li>
+<li>Install MSI Tool <ul>
+<li><a href="https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/">https://forums.guru3d.com/threads/windows-line-based-vs-message-signaled-based-interrupts-msi-tool.378044/</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="calyptos-latency-guide-calyptous">Calypto’s Latency Guide (calypto.us)<a class="headerlink" href="#calyptos-latency-guide-calyptous" title="Permanent link">¶</a></h4>
+<ul>
+<li>Open Powershell in Administrator Mode </li>
+<li>bcedit /set disabledynamictick yes </li>
+<li>Device Manager </li>
+</ul>
+<h4 id="melody-low-latency-script">Melody Low Latency Script<a class="headerlink" href="#melody-low-latency-script" title="Permanent link">¶</a></h4>
+<ul>
+<li>Basic Tweaks </li>
+<li>bcedit commands</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a href="#__codelineno-2-1" id="__codelineno-2-1" name="__codelineno-2-1"></a>Add Melody tweak commands here 
+</code></pre></div>
+<h4 id="fgcos-tweaks">fgcOS Tweaks<a class="headerlink" href="#fgcos-tweaks" title="Permanent link">¶</a></h4>
+<ul>
+<li><a href="https://sourceforge.net/projects/peace-equalizer-apo-extension/">Peace Equalizer</a> </li>
+<li><a href="https://sourceforge.net/projects/equalizerapo/">Equalizer APO</a><br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/Pasted%20image%2020230422181519.png"><img alt="Pasted image 20230422181519.png" src="../../assets/img/Pasted%20image%2020230422181519.png" title="Pasted image 20230422181519.png"/></a></li>
+<li>Special K <ul>
+<li>Turn on Latent Sync </li>
+<li>Delay Bias: All Input No Display</li>
+<li>Add Fightcade <ul>
+<li>emulator -&gt; FBNeo</li>
+<li>c:$USERDIRECTORY$\Documents\Fightcade\emulator\fbneo\roms</li>
+</ul>
+</li>
+<li>CTRL+SHIFT+ESC <ul>
+<li>File -&gt; Install Wrapper DLL </li>
+<li>Framerate limit (right click turn on Latent Sync)</li>
+</ul>
+</li>
+<li>You can tell it’s injecting when the UI turns blue </li>
+<li>Adaptive Sync <strong>off</strong> </li>
+<li>All Input No Display </li>
+<li>Turn off OSD </li>
+</ul>
+</li>
+<li>hidusbf<ul>
+<li>Inside the folder, install the sweetlow certificate </li>
+<li>Enable each controller by clicking Install Service, Filter on Device, set polling to 1000.</li>
+</ul>
+</li>
+<li>DS4 Windows </li>
+<li><a href="https://www.wagnardsoft.com/forums/viewtopic.php?t=1256">ISLC</a><br/>
+<a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../Pasted%20image%2020230422185034.png"><img alt="Pasted image 20230422185034.png" src="../../Pasted%20image%2020230422185034.png" title="Pasted image 20230422185034.png"/></a></li>
+<li>OBS Settings <em>optional</em></li>
+</ul>
+<hr/>
+<h3 id="step-4-game-specific-optimizations">Step 4: Game-Specific Optimizations<a class="headerlink" href="#step-4-game-specific-optimizations" title="Permanent link">¶</a></h3>
+<ul>
+<li>Graphic settings for each game </li>
+<li>Disable V-Sync </li>
+</ul>
+<h4 id="fightcade">Fightcade<a class="headerlink" href="#fightcade" title="Permanent link">¶</a></h4>
+<ul>
+<li>DirectX drivers </li>
+<li>Configure controller</li>
+<li>FC2JSON Pack <ul>
+<li>
+<h5 id="3rd-strike">3rd Strike<a class="headerlink" href="#3rd-strike" title="Permanent link">¶</a></h5>
+<ul>
+<li><a href="https://zachd.com/palmod/releases/">PalMod</a> <em>color palette mods</em> </li>
+<li><a href="https://www.youtube.com/watch?v=4THUKhm3CnE">re:THIRD 3rd Strike color palettes, HUD, and stage mods</a> | <a href="https://mega.nz/file/xV9RzSAb#k8VztZl8WxI-hYQdz45LcToSj4W_4tQV42-y18lvlz4">Download</a></li>
+<li><a href="https://github.com/Grouflon/3rd_training_lua">3rd Strike Training Mode script</a> </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h5 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">¶</a></h5>
+<ul>
+<li>Disable Special K </li>
+<li>Reduce Latent Sync from 100% to <strong>50% Input, 50% Display</strong> and then adjust accordingly.</li>
+<li>Make sure the frame display counter is on. </li>
+</ul>
+<h4 id="tekken-7">Tekken 7<a class="headerlink" href="#tekken-7" title="Permanent link">¶</a></h4>
+<ul>
+<li>Tekken Overlay  </li>
+</ul>
+<h4 id="street-fighter-v">Street Fighter V<a class="headerlink" href="#street-fighter-v" title="Permanent link">¶</a></h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="dragonball-fighterz">DragonBall FighterZ<a class="headerlink" href="#dragonball-fighterz" title="Permanent link">¶</a></h4>
+<ul>
+<li></li>
+</ul>
+<h4 id="king-of-fighters-xv">King of Fighters XV<a class="headerlink" href="#king-of-fighters-xv" title="Permanent link">¶</a></h4>
+<ul>
+<li>Troubleshooting: You might need the Visual C++ Redistributable </li>
+<li><a href="https://whatifgaming.com/how-to-enable-the-king-of-fighters-xv-vsync-option-on-pc/">Disable V-Sync</a> </li>
+</ul>
+<hr/>
+<h3 id="step-5-customization-troubleshooting-and-edge-cases">Step 5: Customization, Troubleshooting, and Edge Cases<a class="headerlink" href="#step-5-customization-troubleshooting-and-edge-cases" title="Permanent link">¶</a></h3>
+<h3 id="microsoft-services-to-potentially-disable">Microsoft Services to Potentially Disable<a class="headerlink" href="#microsoft-services-to-potentially-disable" title="Permanent link">¶</a></h3>
+<ul>
+<li>Windows Font Cache Service </li>
+<li>Windows Push Notifications </li>
+<li>Touch Keyboard and Handwriting Panel Service </li>
+<li>Sync Host </li>
+<li>User Data Storage </li>
+</ul>
+<h4 id="gameutil">GameUtil<a class="headerlink" href="#gameutil" title="Permanent link">¶</a></h4>
+<h4 id="special-k">Special K<a class="headerlink" href="#special-k" title="Permanent link">¶</a></h4>
+<h2 id="-this-has-to-be-optimized-for-each-game-individually">- This has to be optimized for each game individually.<a class="headerlink" href="#-this-has-to-be-optimized-for-each-game-individually" title="Permanent link">¶</a></h2>
+<!-- Source file information -->
+<!-- taken from 
+https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
+<hr/>
+<div class="md-source-file">
+<small>
+<!-- mkdocs-git-revision-date-localized-plugin -->
+<u>Last update</u> :
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2023</span>
+<!-- mkdocs-git-revision-date-plugin -->
+<br/>
+<u>Created</u> :
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2023</span>
+</small>
+</div>
+<!-- Was this page helpful? -->
+<!-- Comment system -->
+<!-- Giscus -->
+<!-- Giscus -->
+<script> 
+    try {
+      const index = document.querySelector('h1').innerHTML;
+      if (index === "Index") {
+        document.querySelector('h1').innerHTML = "Optimization";
+      }
+    } catch (error) {
+      // console.log(error);
+    }
+  </script>
+</article>
+</div>
+</div>
+<a class="md-top md-icon" data-md-component="top" hidden="" href="#">
+<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"></path></svg>
+            Back to top
+          </a>
+</main>
+<footer class="md-footer">
+<div class="md-footer-meta md-typeset">
+<div class="md-footer-meta__inner md-grid">
+<div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+      Material for MkDocs
+    </a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+<div class="md-dialog" data-md-component="dialog">
+<div class="md-dialog__inner md-typeset"></div>
+</div>
+<script id="__config" type="application/json">{"base": "../..", "features": ["navigation.indexes", "navigation.top", "navigation.tabs", "navigation.tabs.sticky", "navigation.expand", "search.suggest", "search.highlight"], "search": "../../assets/javascripts/workers/search.e5c33ebb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+<script src="../../assets/javascripts/bundle.51d95adb.min.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets/dist/javascript.js"></script>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>

@@ -1,0 +1,74 @@
+{
+  "github": {
+    "user": "prime-optimal",
+    "repo": "fgcos-docs",
+    "branch": "main",
+    "token": "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",
+    "automaticallyMergePR": false,
+    "api": {
+      "tiersForApi": "Github Free/Pro/Team (default)",
+      "hostname": ""
+    },
+    "worflow": {
+      "customCommitMsg": "[PUBLISHER] Merge",
+      "workflowName": ""
+    }
+  },
+  "upload": {
+    "behavior": "fixed",
+    "defaultName": "",
+    "rootFolder": "",
+    "yamlFolderKey": "",
+    "frontmatterTitle": {
+      "enable": false,
+      "key": "title"
+    },
+    "replaceTitle": [],
+    "replacePath": [],
+    "autoclean": {
+      "enable": false,
+      "excluded": []
+    },
+    "folderNote": {
+      "enable": false,
+      "rename": "index.md"
+    },
+    "metadataExtractorPath": ""
+  },
+  "conversion": {
+    "hardbreak": false,
+    "dataview": true,
+    "censorText": [],
+    "tags": {
+      "inline": false,
+      "exclude": [],
+      "fields": []
+    },
+    "links": {
+      "internal": false,
+      "unshared": false,
+      "wiki": false,
+      "slugify": false
+    }
+  },
+  "embed": {
+    "attachments": true,
+    "keySendFile": [],
+    "notes": false,
+    "folder": ""
+  },
+  "plugin": {
+    "shareKey": "share",
+    "fileMenu": true,
+    "editorMenu": false,
+    "excludedFolder": [],
+    "copyLink": {
+      "enable": false,
+      "links": "",
+      "removePart": [],
+      "addCmd": false
+    },
+    "noticeError": false,
+    "displayModalRepoEditing": false
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "main": {
+    "id": "680985eb1bf3b9b9",
+    "type": "split",
+    "children": [
+      {
+        "id": "fc967da193674784",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8080031cf3ac446e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Test Note.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fd894feb0a0d0dfd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "fgcOS Installation & Optimization.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "646a8788144d41a5",
+    "type": "split",
+    "children": [
+      {
+        "id": "22bb1ffe6ca3e762",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2dc57eb9623fa146",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "5ef73b1a9fd9d6ce",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e7e680f8621ef046",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "26a43471e103f74d",
+    "type": "split",
+    "children": [
+      {
+        "id": "e6bd3713dc76fa77",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "9114c0e6da11d553",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "fgcOS Installation & Optimization.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "87a38ecf8f0e5e04",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "fgcOS Installation & Optimization.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d6bb904704bf4339",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "e735a679c4d4618d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "fgcOS Installation & Optimization.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "fd894feb0a0d0dfd",
+  "lastOpenFiles": [
+    "Test Note.md",
+    "fgcOS Installation & Optimization.md"
+  ]
+}
