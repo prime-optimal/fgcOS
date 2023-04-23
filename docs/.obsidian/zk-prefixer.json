@@ -1,5 +1,5 @@
 {
   "format": "YYYY-MM-DD-h-mm-a",
   "template": "templates/Zettelkasten",
-  "folder": "timestamps"
+  "folder": "blog"
 }

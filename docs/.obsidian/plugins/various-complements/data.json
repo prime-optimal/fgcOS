@@ -74,8 +74,8 @@
     "Installation": {
       "Installation": {
         "internalLink": {
-          "count": 1,
-          "lastUpdated": 1682250848597
+          "count": 2,
+          "lastUpdated": 1682270383767
         }
       }
     },
@@ -84,6 +84,14 @@
         "frontMatter": {
           "count": 1,
           "lastUpdated": 1682253851527
+        }
+      }
+    },
+    "Optimization": {
+      "Optimization": {
+        "internalLink": {
+          "count": 1,
+          "lastUpdated": 1682270385665
         }
       }
     }
