@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "fgcos"
+version = "0.1.0"
+description = "fgcos on mkdocs"
+authors = ["optimal prime <90554087+prime-optimal@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs-footermatter = "^1.3.1"
+mkdocs-material = "^9.1.8"
+mkdocs-material-extensions = "^1.1.1"
+
+[tool.poetry.group.dev.dependencies]
+pymdown-extensions = "^9.11"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
