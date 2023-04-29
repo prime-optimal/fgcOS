@@ -1,0 +1,5 @@
+{
+  "autorun": true,
+  "template": "templates/Zettelkasten",
+  "folder": "blog"
+}

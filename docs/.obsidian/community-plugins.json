@@ -6,5 +6,6 @@
   "nldates-obsidian",
   "obsidian-mkdocs-publisher",
   "dataview",
-  "templater-obsidian"
+  "templater-obsidian",
+  "obsidian-toggle-meta-yaml-plugin"
 ]

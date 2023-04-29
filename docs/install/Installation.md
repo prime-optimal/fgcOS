@@ -7,17 +7,14 @@ tags: Installation
 
 ### Step 1: Windows 10 Prep  
 - Download Windows 10 stock ISO 
-	- itechtips 
+	- itechtips ≤
 	- microsoft.com
 - use Rufus to write the ISO to a flash drive 
 	- Plug into USB 3.0 
 
-> [!question]  Is this a success?
-> Only time will tell.
 
-```ad-tip
-Copy the Atlas registry file to the USB drive.  Otherwise there will be additional services installed in the background the first time it connects to the internet
-```
+> [!tip] Don't skip this part! 
+> Copy the Atlas registry file to the USB drive. Otherwise there will be additional services installed in the background the first time it connects to the internet
 
 - Disable internet 
 - Do video call
@@ -31,9 +28,8 @@ Copy the Atlas registry file to the USB drive.  Otherwise there will be addition
 - Create user account and password 
 - Click next 
 
-```ad-warning
-Make sure you're not connected to the internet before rebooting so it doesn't try to connect to install updates 
-```
+>[!warning] 
+>Make sure you're not connected to the internet before rebooting so it doesn't try to connect to install updates 
 
 - Connect to the internet 
 - Install AnyDesk for remote administration *not necessary for a self-install*

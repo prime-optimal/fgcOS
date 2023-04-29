@@ -4,7 +4,7 @@ site_url: https://github.com/prime-optimal/fgcos-docs.git # Change this to your 
 
 theme:
     name: 'material'
-    custom_dir: custom_theme
+#    custom_dir: custom_theme
     logo: assets/meta/favicons.png
     favicon: assets/meta/favicons.png
     custom_dir: overrides
@@ -14,23 +14,23 @@ theme:
     language: en
     palette:
 
-    # Light mode
-#    - media: "(prefers-color-scheme: light)"
-#      scheme: default
-#      primary: teal
-#      accent: light blue
-#      toggle:
-#        icon: material/toggle-switch-off-outline
-#        name: Switch to dark mode
+#    Light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: slate
+      primary: deep-purple
+      accent: light green
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
 
     # Dark mode
     - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: blue grey
-      accent: indigo
+      scheme: dracula
+      primary: white
+      accent: light green
       toggle:
-#        icon: material/toggle-switch
-#        name: Switch to light mode
+        icon: material/toggle-switch
+        name: Switch to light mode
     features:
         - navigation.indexes
         - navigation.top
@@ -79,22 +79,22 @@ markdown_extensions:
           class: mermaid
           format: !!python/name:pymdownx.superfences.fence_code_format
 plugins:
-  - simple:
-      include_folders: ["docs/**"]
-      ignore_folders: ["docs/timestamps"]
-      semiliterate:
-        - pattern: \.py$
-          extract:
-            - start: ^\s*"""\W?md\b
-              stop: ^\s*"""\s*$
-              replace: 
-                # replace "foo" with "bar"
-                - ["(.*)foo(.*)$", "\\1bar\\2"] 
+#  - simple:
+#      include_folders: ["docs/**"]
+#      ignore_folders: ["docs/timestamps"]
+#      semiliterate:
+#        - pattern: \.py$
+#          extract:
+#            - start: ^\s*"""\W?md\b
+#              stop: ^\s*"""\s*$
+#              replace: 
+#                # replace "foo" with "bar"
+#                - ["(.*)foo(.*)$", "\\1bar\\2"] 
   - search
   - meta-descriptions
   - git-revision-date-localized:
       type: date
-      fallback_to_build_date: true
+      fallback_to_build_date: false
       locale: en
       custom_format: "%A %d %B %Y"
       enable_creation_date: true
@@ -131,13 +131,13 @@ extra_css:
     - https://cdn.jsdelivr.net/gh/ObsidianPublisher/assets/dist/styles.css
     - assets/css/admonition.css
     - assets/css/custom_attributes.css
-    - assets/css/customization.css
-    - assets/css/fgcos.css
+ #   - assets/css/customization.css
+ #   - assets/css/fgcos.css
 
 extra:
   SEO: assets/meta/SEO.png
   comments: false #disable comments globally
-  generate_graph: true #generate the graph of the site
+  generate_graph: false #generate the graph of the site
   attachments: 'assets/img' #path to the folder where the attachments are stored
   no-auto-h1: false #disable the automatic generation of h1 if no h1 is found
   blog_list:

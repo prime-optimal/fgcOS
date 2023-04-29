@@ -52,10 +52,8 @@ Some games come with these already, but it's likely these will need to be instal
 - Visual C++ Redistributable
 - Visual .NET Redistributable 
 
-
-```ad-tip
-At this point there should probably be around ~60 processes 
-```
+>[!check] Checkpoint #1
+>At this point there should probably be around ~60 processes 
 
 - GameUtil - *kills desktop window manager which removes 1 frame of lag, locks*  
 	- Move to desktop
@@ -68,7 +66,7 @@ At this point there should probably be around ~60 processes
 	- Install games 
 	- Right click the steam shortcut -> Properties and enter this command:
 
-```
+```bash
 "C:\Program Files (x86)\Steam\Steam.exe" -no-browser +open steam://open/minigameslist
 ```
 
@@ -85,10 +83,8 @@ At this point there should probably be around ~60 processes
 #### Melody Low Latency Script 
 - Basic Tweaks 
 - bcedit commands
-
-```ad-note
-Add Melody tweak commands here 
-```
+>[!attention]
+>Add Melody tweak commands here at some point so they can be copied and pasted easily.
 
 #### fgcOS Tweaks 
 
@@ -111,7 +107,7 @@ Add Melody tweak commands here
 - hidusbf
 	- Inside the folder, install the sweetlow certificate 
 	- Enable each controller by clicking Install Service, Filter on Device, set polling to 1000.
-- DS4 Windows 
+- [[DS4 Windows]]  | [Download](https://ds4-windows.com/download/ryochan7-ds4windows/#)
 - [ISLC](https://www.wagnardsoft.com/forums/viewtopic.php?t=1256)
 	![[Pasted image 20230422185034.png]]
 - OBS Settings *optional*
@@ -162,6 +158,6 @@ Add Melody tweak commands here
 
 #### GameUtil 
 
-#### Special K
+#### [[Special K]]
 - This has to be optimized for each game individually. 
 - 

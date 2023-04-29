@@ -1,0 +1,140 @@
+/* Obsidian theme variables */
+:root {
+    --obsidian-background-primary: #100e17;
+    --obsidian-background-primary-alt: #0d0b12;
+    --obsidian-background-secondary: #191621;
+    --obsidian-background-secondary-alt: #0d0b12;
+    --obsidian-text-normal: #bebebe;
+    --obsidian-text-accent: #0fb6d6;
+    --obsidian-text-sub-accent: #f4569d;
+    --obsidian-text-dim: #45aaff;
+    --obsidian-text-faint: #7aa2f7;
+    --obsidian-text-title-h1: var(--obsidian-text-accent);
+    --obsidian-text-title-h2: #cbdbe5;
+    --obsidian-text-title-h3: #cbdbe5;
+    --obsidian-text-title-h4: #cbdbe5;
+    --obsidian-text-title-h5: #cbdbe5;
+    --obsidian-text-link: #b4b4b4;
+    --obsidian-text-a: #6bcafb;
+    --obsidian-text-a-hover: #6bcafb;
+    --obsidian-text-mark: #263d92;
+    --obsidian-code-background: var(--obsidian-background-secondary);
+    --obsidian-interactive-accent: rgba(14, 210, 247, 0.5);
+    --obsidian-interactive-accent-hover: rgba(14, 210, 247, 0.8);
+    --obsidian-interactive-before: #5e6565;
+    --obsidian-blockquote-border: #4aa8fb;
+    --obsidian-tag-background: rgba(14, 210, 247, 0.15);
+    --obsidian-interactive-accent-rgb: #3dd7fb;
+    --obsidian-font-family-editor: 'Ubuntu';
+    --obsidian-font-family-preview: 'Ubuntu';
+    --obsidian-bg-sub-accent-55: rgba(244, 86, 157, 0.55);
+    --obsidian-bg-accent-55: rgba(14, 210, 247, 0.55);
+    --obsidian-bg-accent-25: rgba(14, 210, 247, 0.25);
+    --obsidian-text-highlight-bg: rgba(244, 86, 157, 0.25);
+    --obsidian-background-modifier-border: rgba(14, 210, 247, 0.05);
+    --obsidian-editor-border-color: #101014;
+  }
+  
+  /* Basic typography and colors */
+  body {
+    background-color: var(--obsidian-background-primary);
+    color: var(--obsidian-text-normal);
+    font-family: var(--obsidian-font-family-preview);
+  }
+  
+  a {
+    color: var(--obsidian-text-a);
+  }
+  
+  a:hover {
+    color: var(--obsidian-text-a-hover);
+  }
+  
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-typeset h4,
+  .md-typeset h5 {
+    color: var(--obsidian-text-title-h2);
+  }
+  
+  .md-typeset h1 {
+    color: var(--obsidian-text-title-h1);
+  }
+  /* Code blocks */
+.md-typeset pre {
+    background-color: var(--obsidian-code-background);
+  }
+  
+  .md-typeset code {
+    color: var(--obsidian-text-accent);
+  }
+  
+  /* Blockquotes */
+  .md-typeset blockquote {
+    border-color: var(--obsidian-blockquote-border);
+  }
+  
+  /* Inline code */
+  .md-typeset p code {
+    background-color: var(--obsidian-background-secondary);
+    color: var(--obsidian-text-accent);
+  }
+  
+  /* Tables */
+  .md-typeset table th,
+  .md-typeset table td {
+    border-color: var(--obsidian-background-modifier-border);
+  }
+  
+  .md-typeset table tr:nth-child(2n) {
+    background-color: var(--obsidian-background-secondary);
+  }
+  
+  /* Header */
+  .md-header {
+    background-color: var(--obsidian-background-secondary);
+  }
+  
+  .md-header-nav__button {
+    color: var(--obsidian-text-normal);
+  }
+  
+  .md-header-nav__button:hover {
+    color: var(--obsidian-text-accent);
+  }
+  
+  /* Side navigation */
+  .md-nav {
+    background-color: var(--obsidian-background-primary);
+    color: var(--obsidian-text-normal);
+  }
+  
+  .md-nav__title {
+    color: var(--obsidian-text-accent);
+  }
+  
+  .md-nav a {
+    color: var(--obsidian-text-normal);
+  }
+  
+  .md-nav a:hover {
+    color: var(--obsidian-text-accent);
+  }
+  
+  /* Scrollbar */
+  ::-webkit-scrollbar {
+    background-color: var(--obsidian-background-primary);
+    width: 16px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--obsidian-background-secondary);
+    border-radius: 8px;
+    border: 4px solid var(--obsidian-background-primary);
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: var(--obsidian-text-accent);
+  }
+  

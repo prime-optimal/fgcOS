@@ -5,13 +5,13 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<meta content="fgcOS An optimized system for playing fighting games." name="description"/>
-<link href="https://github.com/prime-optimal/fgcos-docs.git/hidden/Low-End%20Machines/" rel="canonical"/>
-<link href="../../blog/2023-04-23-11-41-am%20Deployment%20Improvement/" rel="prev"/>
-<link href="../tags/" rel="next"/>
+<meta content="2023-04-23 Finally figured out how to deploy straight to the server." name="description"/>
+<link href="https://github.com/prime-optimal/fgcos-docs.git/blog/2023-04-23-11-41-am%20Deployment%20Improvement/" rel="canonical"/>
+<link href="../2023-04-23-10-18-am%20Site%20Launch/" rel="prev"/>
+<link href="../../install/Installation/" rel="next"/>
 <link href="../../assets/meta/favicons.png" rel="icon"/>
 <meta content="mkdocs-1.4.2, mkdocs-material-9.0.6" name="generator"/>
-<title>Low End Machines - fgcOS</title>
+<title>2023 04 23 11 41 am Deployment Improvement - fgcOS</title>
 <link href="../../assets/stylesheets/main.558e4712.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.2505c338.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
@@ -30,10 +30,10 @@
 <link href="https://unpkg.com/tippy.js@6/themes/translucent.css" rel="stylesheet"/>
 <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" referrerpolicy="no-referrer" rel="stylesheet"/>
 <meta content="https://github.com/prime-optimal/fgcos-docs.git/" name="site_url"/>
-<meta content="Low End Machines" property="og:title"/>
-<meta content="Low End Machines" name="twitter:title"/>
-<meta content="fgcOS An optimized system for playing fighting games." name="og:description"/>
-<meta content="fgcOS An optimized system for playing fighting games." name="twitter:description"/>
+<meta content="2023 04 23 11 41 am Deployment Improvement" property="og:title"/>
+<meta content="2023 04 23 11 41 am Deployment Improvement" name="twitter:title"/>
+<meta content="2023-04-23 Finally figured out how to deploy straight to the server." name="description"/>
+<meta content="2023-04-23 Finally figured out how to deploy straight to the server." name="twitter:description"/>
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="https://github.com/prime-optimal/fgcos-docs.git/assets/meta/SEO.png" property="og:image"/>
 <meta content="https://github.com/prime-optimal/fgcos-docs.git/assets/meta/SEO.png" name="twitter:image"/>
@@ -55,9 +55,6 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#techpowerup-gpu-z">
-          Skip to content
-        </a>
 </div>
 <div data-md-component="announce">
 </div>
@@ -79,7 +76,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Low End Machines
+              2023 04 23 11 41 am Deployment Improvement
             
           </span>
 </div>
@@ -136,7 +133,7 @@
     </a>
 </li>
 <li class="md-tabs__item">
-<a class="md-tabs__link" href="../../blog/2023-04-23-10-18-am%20Site%20Launch/">
+<a class="md-tabs__link md-tabs__link--active" href="../2023-04-23-10-18-am%20Site%20Launch/">
         Blog
       </a>
 </li>
@@ -168,9 +165,9 @@
         Home
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle md-toggle--indeterminate" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
-<label aria-expanded="false" class="md-nav__link" for="__nav_2" tabindex="0">
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" id="__nav_2" type="checkbox"/>
+<label aria-expanded="true" class="md-nav__link" for="__nav_2" tabindex="0">
           Blog
           <span class="md-nav__icon md-icon"></span>
 </label>
@@ -181,12 +178,13 @@
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../blog/2023-04-23-10-18-am%20Site%20Launch/">
+<a class="md-nav__link" href="../2023-04-23-10-18-am%20Site%20Launch/">
         Site Launch
       </a>
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../../blog/2023-04-23-11-41-am%20Deployment%20Improvement/">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<a class="md-nav__link md-nav__link--active" href="./">
         2023 04 23 11 41 am Deployment Improvement
       </a>
 </li>
@@ -227,17 +225,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#techpowerup-gpu-z">
-    TechPowerUp GPU-Z
-  </a>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -266,15 +253,17 @@
   IN THE SOFTWARE.
 -->
 <!-- Tags -->
+<nav class="md-tags">
+<span class="md-tag">admin, deployment</span>
+</nav>
 <!-- Actions -->
 <!--
   Hack: check whether the content contains a h1 headline. If it doesn't, the
   page title (or respectively site name) is used as the main headline.
 -->
-<h1>Low End Machines</h1>
+<h1>2023 04 23 11 41 am Deployment Improvement</h1>
 <!-- Page content -->
-<h3 id="techpowerup-gpu-z">TechPowerUp GPU-Z<a class="headerlink" href="#techpowerup-gpu-z" title="Permanent link">¶</a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../assets/img/Pasted%20image%2020230423024012.png"><img alt="Pasted image 20230423024012.png" src="../../assets/img/Pasted%20image%2020230423024012.png" title="Pasted image 20230423024012.png"/></a></p>
+<p><a href="../2023-04-23" title="2023-04-23">2023-04-23</a> Finally figured out how to deploy straight to the server.</p>
 <!-- Source file information -->
 <!-- taken from 
 https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-file.html -->
@@ -298,7 +287,7 @@ https://github.com/squidfunk/mkdocs-material/blob/master/src/partials/source-fil
     try {
       const index = document.querySelector('h1').innerHTML;
       if (index === "Index") {
-        document.querySelector('h1').innerHTML = "Low End Machines";
+        document.querySelector('h1').innerHTML = "2023 04 23 11 41 am Deployment Improvement";
       }
     } catch (error) {
       // console.log(error);

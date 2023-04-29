@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "de937e867f5c6ca5",
+        "id": "f0ae65299d0e81d7",
         "type": "tabs",
         "children": [
           {
-            "id": "e2517300787a0dd2",
+            "id": "e62fa8e88cc1226a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "install/Installation.md",
+                "file": "install/Optimization.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "7b59a6cdf1dfae8a",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "install/Installation.md",
+                "file": "install/Optimization.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "install/Installation.md",
+                "file": "install/Optimization.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "install/Installation.md"
+                "file": "install/Optimization.md"
               }
             }
           },
@@ -137,11 +138,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -156,12 +159,22 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "e2517300787a0dd2",
+  "active": "2da14d2b1f77aed0",
   "lastOpenFiles": [
-    "index.md",
+    "templates/Zettelkasten.md",
+    "tweaks/DS4 Windows.md",
+    "templates/Untitled 1.md",
+    "Special K.md",
     "install/Optimization.md",
     "install/Installation.md",
+    "hidden/Low-End Machines.md",
+    "Untitled.md",
+    "hidden/tags.md",
+    "tweaks",
+    "index.md",
+    "blog/2023-04-23-11-41-am Deployment Improvement.md",
     "blog/2023-04-23-10-18-am Site Launch.md",
+    "blog/Untitled.md",
     "blog/2023-04-23-9-15-am.md",
     "blog/2023-04-23-9-14-am.md",
     "timestamps/test.md",
@@ -170,10 +183,6 @@
     "timestamps/2023-04-23-5-44-am.md",
     "timestamps/test",
     "assets/meta/favicons.png",
-    "templates/Zettelkasten.md",
-    "hidden/tags.md",
-    "Untitled.md",
-    "templates/Untitled 1.md",
     "timestamps/2023-04-23-5-42-am.md",
     "blog",
     "templates",
@@ -183,7 +192,6 @@
     "fgcos/assets/javascripts/lunr/min/lunr.th.min.js",
     "fgcos/assets/javascripts/lunr/min/lunr.ta.min.js",
     "fgcos/assets/javascripts/lunr/min/lunr.sv.min.js",
-    "fgcos/assets/javascripts/lunr/min/lunr.stemmer.support.min.js",
     "fgcos/assets/meta/favicons.png",
     "fgcos/assets/img/Pasted image 20230423024012.png",
     "fgcos/assets/meta/favicons-black.png",

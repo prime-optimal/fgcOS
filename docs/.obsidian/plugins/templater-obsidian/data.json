@@ -24,7 +24,7 @@
     ""
   ],
   "startup_templates": [
-    ""
+    "templates/Zettelkasten.md"
   ],
   "enable_ribbon_icon": true
 }

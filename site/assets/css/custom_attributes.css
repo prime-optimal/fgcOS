@@ -1,3 +1,89 @@
 /* File dedicated to custom attributes */
 /* Get more info here : https://pypi.org/project/mkdocs-custom-tags-attributes/ */
 
+:root {
+    @extend %root;
+  
+    // Primary color shades
+    --md-primary-code-bg-color: #282a36;
+    --md-primary-fg-color: hsla(265deg, 89%, 78%, 1);
+    --md-primary-fg-color--transparent: hsla(265deg, 89%, 78%, 0.1);
+    --md-primary-fg-color--light: hsla(265deg, 89%, 83%, 1);
+    --md-primary-fg-color--dark: hsla(265deg, 89%, 73%, 1);
+  
+    // Accent color shades
+    --md-accent-fg-color:                80, 250, 123;
+    --md-accent-fg-color--transparent:   rgb(var(--accent-color),.8);
+    --md-accent-bg-color:                #ff79c6;
+    --md-accent-bg-color--light:         hsla(0, 0%, 100%, 0.7);
+  }
+  
+  
+  // ----------------------------------------------------------------------------
+  
+  // Allow to explicitly use color schemes in nested content
+  [data-md-color-scheme="dracula"] {
+    @extend %root;
+  }
+  
+  
+  [data-md-color-scheme="dracula"] {
+    --md-default-fg-color: rgba(248, 248, 242, 0.87);
+    --md-default-fg-color--light: rgba(248, 248, 242, 0.54);
+    --md-default-fg-color--lighter: rgba(248, 248, 242, 0.16);
+    --md-default-fg-color--lightest: rgba(248, 248, 242, 0.07);
+    --md-default-bg-color: #1e2029;
+    --md-default-bg-color--light: rgba(50, 52, 67, 0.7);
+    --md-default-bg-color--lighter: rgba(50, 52, 67, 0.3);
+    --md-default-bg-color--lightest: rgba(50, 52, 67, 0.12);
+    --md-default-bg-color--trans: rgba(50, 52, 67, 0);
+    --md-text-color: var(--md-default-fg-color);
+    --md-typeset-color: var(--md-default-fg-color);
+    --md-admonition-fg-color: var(--md-default-fg-color);
+    --md-code-fg-color: hsl(60deg, 30%, 96%);
+    --md-code-bg-color: hsl(231deg, 15%, 18%);
+    --md-code-inline-bg-color: #323443;
+    --md-code-hl-operator-color: hsl(326deg, 100%, 74%);
+    --md-code-hl-punctuation-color: hsl(60deg, 30%, 96%);
+    --md-code-hl-string-color: hsl(65deg, 92%, 76%);
+    --md-code-hl-special-color: hsl(265deg, 89%, 78%);
+    --md-code-hl-number-color: hsl(265deg, 89%, 78%);
+    --md-code-hl-keyword-color: hsl(326deg, 100%, 74%);
+    --md-code-hl-name-color: hsl(60deg, 30%, 96%);
+    --md-code-hl-constant-color: hsl(265deg, 89%, 78%);
+    --md-code-hl-function-color: hsl(135deg, 94%, 65%);
+    --md-code-hl-comment-color: hsl(225deg, 27%, 51%);
+    --md-code-hl-variable-color: hsl(31deg, 100%, 71%);
+    --md-code-hl-generic-color: hsl(225deg, 27%, 51%);
+    --md-code-hl-color: hsl(231deg, 25%, 25%);
+    --md-code-hl-entity-color: hsl(135deg, 94%, 65%);
+    --md-code-hl-tag-color: hsl(326deg, 100%, 74%);
+    --md-code-hl-namespace-color: hsl(60deg, 30%, 96%);
+    --md-code-hl-builtin-color: hsl(191deg, 97%, 77%);
+    --md-code-hl-class-color: hsl(191deg, 97%, 77%);  --md-code-special-bg-color: #1c1e26;
+    --md-code-alternate-bg-color: #3d3e49;
+    --md-code-link-bg-color: #364653;
+    --md-typeset-a-color: hsl(191deg, 97%, 77%);
+    --md-typeset-mark-color: #6e7252;
+    --md-typeset-del-color: #734568;
+    --md-typeset-ins-color: #36724e;
+    --md-progress-stripe: var(--md-default-bg-color--lightest);
+    --md-progress-100: hsl(135deg, 94%, 65%);
+    --md-progress-80: hsl(135deg, 92%, 79%);
+    --md-progress-60: hsl(65deg, 92%, 76%);
+    --md-progress-40: hsl(31deg, 100%, 71%);
+    --md-progress-20: hsl(326deg, 100%, 74%);
+    --md-progress-0: hsl(0deg, 100%, 67%);
+    --md-typeset-kbd-color: var(--md-default-fg-color--lightest);
+    --md-typeset-kbd-border-color: var(--md-default-bg-color--ultra-dark);
+    --md-typeset-kbd-accent-color: var(--md-default-fg-color--lighter);}
+  
+  [data-md-color-primary=dracula] {
+      --md-primary-fg-color: #546d78;
+      --md-primary-fg-color--light: #607c8a;
+      --md-primary-fg-color--dark: #455a63;
+      --md-primary-bg-color: #fff;
+      --md-primary-bg-color--light: #ffffffb3;
+      --md-typeset-a-color: #4051b5;
+  }
+  

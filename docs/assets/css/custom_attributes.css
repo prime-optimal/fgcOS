@@ -1,3 +1,35 @@
-/* File dedicated to custom attributes */
-/* Get more info here : https://pypi.org/project/mkdocs-custom-tags-attributes/ */
+[data-md-header="dracula"] {
+    --md-primary-fg-color:        #EE0F0F;
+    --md-primary-fg-color--dark:  #90030C;
+    --md-typeset-a-color: #ff79c6;
+    --md-primary-fg-color: #282a36;
+    --md-default-bg-color: #282a36;
+    --md-bg-color: #282a36;
+    --md-
+  }
+[data-md-color-accent="light green"] {
+    --md-code-link-accent-bg-color: #3C3652;
+    --md-accent-fg-color: hsla(265deg, 89%, 73%, 1);
+    --md-accent-fg-color--transparent: hsla(265deg, 89%, 73%, 0.1);
+    --md-accent-bg-color: #3C3652;
+    --md-accent-bg-color--light: var(--md-default-bg-color--light);
+  
+}
+
+  .md-default-bg-color: {
+    color: #282A36;
+  }
+
+  .md-primary-fg-color {
+    color: purple;
+  } 
+
+  /* Header */
+  .md-header {
+    background-color: #3C3652;
+  }
+
+  .md-typeset a {
+    color: #ff79c6;
+  }
 
